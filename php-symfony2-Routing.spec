@@ -10,7 +10,7 @@ License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
 # Source0-md5:	d185e28cb56be807e2c421900faf9a5b
-URL:		http://pear.symfony.com/package/Routing/
+URL:		http://symfony.com/doc/current/components/routing/index.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
