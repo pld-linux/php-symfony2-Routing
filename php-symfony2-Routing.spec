@@ -1,15 +1,14 @@
-%define		status		stable
 %define		pearname	Routing
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 Routing Component
+Summary:	Symfony2 Routing Component
 Name:		php-symfony2-Routing
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	972f6c200189a9b6ff7a906d0e018e49
+# Source0-md5:	11304b23ff3fb1276bdd2c62294d993b
 URL:		http://symfony.com/doc/current/components/routing/index.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
@@ -27,21 +26,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	 pear(Config.*) pear(Yaml.*)
 
 %description
-Symfony2 Routing Component
-
-In PEAR status of this package is: %{status}.
+The Routing Component maps an HTTP request to a set of configuration
+variables.
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-mv .%{php_pear_dir}/Symfony/Component/%{pearname}/CHANGELOG.md .
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitignore
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
 
 %install
