@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Routing Component
 Name:		php-symfony2-Routing
-Version:	2.4.3
+Version:	2.4.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	992a382db565e64593f1d3bd961eb6f0
+# Source0-md5:	27d32b12100cd0716ca700904b40408d
 URL:		http://symfony.com/doc/2.4/components/routing/index.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
