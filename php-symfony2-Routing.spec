@@ -11,13 +11,11 @@ Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{
 # Source0-md5:	b9026aac3407534aadce86726ca4b3b3
 URL:		http://symfony.com/doc/2.7/components/routing/index.html
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(pcre)
 Requires:	php(spl)
 Requires:	php(tokenizer)
-Requires:	php-pear >= 4:1.3.10
 Suggests:	php-doctrine-Annotations
 Suggests:	php-symfony2-Config
 Suggests:	php-symfony2-ExpressionLanguage
