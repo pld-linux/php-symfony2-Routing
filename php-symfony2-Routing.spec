@@ -16,6 +16,7 @@ Requires:	php(core) >= %{php_min_version}
 Requires:	php(pcre)
 Requires:	php(spl)
 Requires:	php(tokenizer)
+Requires:	php-dirs >= 1.6
 Suggests:	php-doctrine-Annotations
 Suggests:	php-symfony2-Config
 Suggests:	php-symfony2-ExpressionLanguage
