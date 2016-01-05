@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Routing Component
 Name:		php-symfony2-Routing
-Version:	2.7.7
+Version:	2.7.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	b9026aac3407534aadce86726ca4b3b3
+# Source0-md5:	60eaeb465014618b75e0f78326bf4f40
 URL:		http://symfony.com/doc/2.7/components/routing/index.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.654
