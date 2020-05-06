@@ -2,13 +2,13 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Routing Component
 Name:		php-symfony2-Routing
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	60eaeb465014618b75e0f78326bf4f40
-URL:		http://symfony.com/doc/2.7/components/routing/index.html
+# Source0-md5:	e3da50c7203e1ef401ab7df069a2db90
+URL:		https://symfony.com/doc/2.8/components/routing.htmlindex.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= %{php_min_version}
