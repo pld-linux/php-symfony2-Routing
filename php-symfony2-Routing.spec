@@ -3,7 +3,7 @@
 Summary:	Symfony2 Routing Component
 Name:		php-symfony2-Routing
 Version:	2.8.52
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
